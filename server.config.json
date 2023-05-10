@@ -1,0 +1,6 @@
+{
+    "mongodb_url": "mongodb://",
+    "mongodb_dbName": "flipkart",
+    "hostname": "",
+    "port": 3001
+}
