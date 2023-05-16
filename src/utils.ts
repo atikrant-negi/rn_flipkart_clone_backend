@@ -18,6 +18,16 @@ export const CONSTANTS = {
     }
 };
 
+export class RequestError extends Error {
+    status: number;
+    
+    constructor(message: any, status: number) {
+        super(message);
+        this.status = status
+        this.name = 'RequestError';
+    }
+};
+
 export const isEmpty = (field: any) => {
     return (field == undefined || field == '')
 };

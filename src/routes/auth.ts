@@ -65,7 +65,10 @@ router.post('/signup', (req, res, next) => {
             // register a new user
             await getUsers().insertOne({
                 phone: body.phone || '',
-                email: body.email || ''
+                email: body.email || '',
+                favorites: [],
+                cart: [],
+                orders: []
             });
             res.status(201).json({ message: CONSTANTS.CREATED.USER });
         }
